@@ -1,0 +1,660 @@
+//настройки шрифтов
+@import 'fonts'
+$subtitle: #494949
+$title: #7c7c7c
+
+
+.title
+	font-size: 18px
+	font-family: 'Roboto Slab Regular'
+	color: #7c7c7c
+.subtitle
+	font-size: 24px
+	font-family: 'Roboto Slab Regular'
+	text-transform: uppercase
+	color: #494949
+	position: relative
+::before
+	content: ""
+	display: block
+	position: absolute
+	top: 40px
+	height: 2px
+	background: #2eb0ec
+	width: 2%
+	left: 49%
+
+*
+	box-sizing: border-box
+
+/*******   Шапка   *******/
+.header
+	min-height: 100vh
+	background-size: cover
+	background-position: center
+	align-content: center
+
+.container
+	max-width: 1110px
+	margin: auto
+	&-title
+		text-transform: uppercase
+		font-size: 40px
+		font-family: 'Museo Slab 500', sans-serif
+		color: #fff
+		letter-spacing: 2px
+		margin-top: 200px
+	&-subtitlee
+		font-size: 26px
+		font-family: 'Raleway Medium', sans-serif
+		color: #fff
+		line-height: 1.5
+	&-btn
+		max-width: 500px
+		margin-top: 70px
+		
+	&-btn-list
+		display: flex
+		justify-content: space-around
+		align-items: center
+		list-style: none
+		padding: 0
+	
+	&-btn-google
+		padding: 22px 30px
+		background-color: #fff
+		border-radius: 10px
+		display: flex
+		align-items: center
+		width: 220px
+		text-align: center
+		cursor: pointer
+		&:hover
+			background-color: darken(#fff, 5%)
+		img
+			width: 30px
+			height: 30px
+			position: absolute
+		a
+			color: #3e3e3e
+			font-size: 20px
+			font-family: 'Raleway Semibold'
+			text-decoration: none
+			padding-left: 35px
+	&-btn-learn-more
+		padding: 22px 30px
+		background-color: #4f9edb
+		border-radius: 10px
+		width: 220px
+		text-align: center
+		cursor: pointer
+		&:hover
+			background-color: darken(#4f9edb, 5%)
+		a
+			color: #3e3e3e
+			font-size: 20px
+			font-family: 'Raleway Semibold'
+			text-decoration: none
+
+					
+.navbar
+	display: flex
+	align-items: center
+	height: 130px
+	border-bottom: 1px solid #fff
+	&-logo
+		width: 30%
+	&-m-menu-link
+		display: none
+	&-top-menu
+		width: 70%
+	&-list
+		display: flex
+		justify-content: space-around
+		align-items: center
+	&-menu
+		list-style: none
+		text-transform: uppercase
+		font-size: 17px
+		font-family: 'Raleway Semibold'
+		a
+			color: #fff
+			text-decoration: none
+			&:hover
+				color: darken(#fff, 5%)
+	&-auth
+		list-style: none
+		&-btn
+			text-transform: uppercase
+			font-size: 17px
+			font-family: 'Raleway Semibold'
+			background: #4ca3e6
+			border-radius: 10px
+			border: none
+			padding: 20px 20px 20px 30px
+			color: #fff
+			cursor: pointer
+			&:hover
+				background: darken(#4ca3e6, 5%)
+
+
+	
+/*******   Услуги   *******/
+.services
+	text-align: center
+	margin-top: 90px
+	margin-bottom: 150px
+.ourservices
+	display: flex
+	&-web-development, &-photography, &-vector-artist
+	&-services-img
+		padding-top: 80px
+		display: flex
+		justify-content: space-around
+		align-items: center
+		height: 100px
+	span
+		font-family: 'Raleway Bold'
+		font-size: 18px
+		color: $subtitle
+		display: block
+		margin-top: 60px
+	p
+		font-family: 'Raleway Medium'
+		font-size: 14px
+		color: $title
+		padding-top: 30px
+
+
+/*******   Костомизация   *******/
+.costomization
+	background-image: url(../images/costomization/bg-costomization.png)
+	padding-top: 115px
+	padding-bottom: 110px
+	display: flex
+	.image-bg		
+		.image
+			position: absolute
+			left: 0
+	&-features
+		width: 50%
+		float: right
+		span
+			font-size: 22px
+			font-family: 'Raleway Semibold'
+			color: #b3b4b4
+		h3
+			font-family: 'Raleway Semibold'
+			font-size: 29px
+			color: $subtitle
+		p
+			font-family: 'Raleway Medium'
+			color: $title
+			font-size: 20px
+	&-features-list
+		padding-top: 40px
+		list-style: none
+		margin: 0
+		padding-bottom: 40px
+		li
+			font-family: 'Myriad Pro Regular'
+			font-size: 14px
+			color: $title
+			display: flex
+			align-items: center	
+			padding: 10px 0
+			img
+				padding-right: 20px
+	&-features-button
+		text-transform: uppercase
+		font-family: 'Myriad Pro Regular'
+		font-size: 14px
+		color: #fff
+		background: #66d4f4
+		border: none
+		padding: 19px 25px
+		border-radius: 30px
+		cursor: pointer
+		display: flex
+		margin-left: 45px
+		&:hover
+			background: darken(#66d4f4, 5%)
+
+
+/*******   Иные услуги   *******/
+.other-services
+	padding-top: 50px
+	padding-bottom: 100px
+	.title , .subtitle 
+		text-align: center
+		display: block
+	&-list
+		
+		display: flex
+		width: 100%
+		flex-wrap: wrap
+		justify-content: space-around
+	&-block
+		width: 30%
+		margin-top: 80px
+		img
+			position: absolute
+		span
+			padding-left: 55px
+			display: block
+			padding-top: 8px
+			font-size: 18px
+			color: $subtitle
+			font-family: 'Myriad Pro Regular'
+		p
+			font-size: 14px
+			color: $title
+			font-family: 'Myriad Pro Regular'
+			padding-left: 55px
+			padding-top: 10px
+			line-height: 1.5
+
+/*******   Отзывы   *******/
+.reviews
+	background-image: url(../images/reviews/reviews.png)
+	padding-top: 50px
+	.title , .subtitle
+		display: block
+		text-align: center
+	&-block
+		margin-top: 110px
+
+	&-carousel 
+		padding-bottom: 100px
+	&-slide
+		background: #fff
+		border-radius: 10px
+		width: 80%
+		margin: 0 auto
+	&-author-img
+		position: relative
+		top: 0
+		left: 45%
+	&-author
+		text-align: center
+		display: block
+		font-size: 20px
+		font-weight: 900
+		font-family: 'Myriad Pro Regular'
+		color: $subtitle
+		padding-top: 30px
+	&-post
+		text-align: center
+		display: block
+		font-size: 15px
+		font-family: 'Myriad Pro Regular'
+		color: $title
+	&-text
+		text-align: center
+		font-size: 18px
+		font-family: 'Myriad Pro Regular'
+		color: $title
+		padding: 45px 75px 110px 75px
+
+
+/*******   Ресурсы   *******/
+.resourse
+	&-block
+		margin-top: 150px
+		margin-bottom: 150px
+		display: flex
+	&-text
+		padding-right: 80px
+		.span-top
+			font-family: 'Raleway Semibold'
+			font-size: 22px
+			color: $subtitle
+		.span-down
+			display: block
+			font-family: 'Raleway Medium'
+			font-size: 20px
+			color: $title
+			padding-bottom: 20px
+		h3
+			font-family: 'Raleway Semibold'
+			font-size: 32px
+			color: $subtitle
+		p
+			font-family: 'Raleway Medium'
+			font-size: 14px
+			color: $subtitle
+			line-height: 1.5
+
+
+
+/*******   Цены   *******/
+.price
+	background: #f4fbfc
+	padding-top: 65px
+	.title, .subtitle
+		display: block
+		text-align: center
+	&-block
+		display: flex
+		justify-content: space-around
+		margin-top: 90px
+		padding-bottom: 140px
+	&-package
+		border: 1px solid #eaf1f2
+		background: #fff
+		border-radius: 15px
+		width: 30%
+		transition: 0.2s
+		&:hover
+			cursor: pointer
+			box-shadow: 0px 0px 60px 10px rgba(204, 204, 223, 0.71)
+			position: relative
+			opacity: 1
+			transform: scale(1.1)
+		img
+			margin: 45px auto
+			display: block
+		.name-pack
+			display: block
+			text-align: center
+			font-size: 16px
+			font-family: 'Raleway Bold'
+			color: $subtitle
+		.price-pack
+			display: block
+			text-align: center
+			font-size: 72px
+			font-family: 'Raleway Extra Bold'
+			font-weight: 900
+			color: #3dc0ef
+			sup
+				font-size: 20px
+				font-family: 'Raleway Medium'
+				padding-right: 5px
+				vertical-align: super
+			strong
+				font-size: 20px
+				font-family: 'Raleway Medium'
+		.list-pack
+			padding: 0
+			margin: 0
+			li
+				text-align: center
+				font-family: 'Raleway Medium'
+				font-size: 14px
+				list-style: none
+				padding: 15px 0 15px 0
+			.active
+				color: $title
+			.not-active
+				color: #bebebe
+		.price-btn
+			margin: 0 auto
+			display: block
+			font-family: 'Raleway Bold'
+			font-size: 14px
+			text-transform: uppercase
+			margin-top: 20px
+			margin-bottom: 40px
+			color: #fff
+			background: #66d4f4
+			border: none
+			padding: 15px 35px
+			border-radius: 30px
+			cursor: pointer
+			&:hover
+				background: darken(#66d4f4, 5%)
+
+
+
+/*******   Подписаться   *******/
+.subscribe
+	padding-top: 70px
+	margin-bottom: 110px
+	.title
+		display: block
+		text-align: center
+	.subtitle
+		display: block
+		text-align: center
+	&-block
+		margin-top: 50px
+	&-form
+		display: flex
+		flex-direction: column
+		.name, .mail
+			width: 30%
+			align-self: center
+			height: 70px
+			color: $subtitle
+			font-family: 'Raleway Bold'
+			font-size: 14px
+			text-align: center
+			background: #f5fafa
+			border: none
+			outline: none
+			border-radius: 40px
+			margin-top: 10px
+			margin-bottom: 25px
+			&:focus
+				background: #fff
+				border: 1px solid #f7f7f7
+			&::placeholder
+				color: #afafaf
+		.subscribe-btn
+			width: 30%
+			align-self: center
+			height: 70px
+			background: #66d4f4
+			color: #fff
+			text-transform: uppercase
+			font-family: 'Raleway Bold'
+			font-size: 16px
+			border: none
+			border-radius: 40px
+			margin-bottom: 25px
+			cursor: pointer
+			&:hover
+				background: darken(#66d4f4, 5%)
+
+
+
+/*******   Футер   *******/
+.footer
+	&-block
+		border-top: 1px solid #dfdfdf
+		border-bottom: 1px solid #dfdfdf
+		display: flex
+		justify-content: space-around
+		padding-top: 50px
+		padding-bottom: 80px
+		.floby
+			&-img
+			&-desc
+				font-family: 'Raleway Medium'
+				font-size: 14px
+				color: $title
+				padding-top: 15px
+				padding-bottom: 15px
+				line-height: 1.5
+			&-social-icon
+				
+		.block-futer
+			span
+				font-family: 'Raleway Bold'
+				font-size: 20px
+				color: $subtitle
+			.footer-list
+				padding: 0
+				margin: 0
+				margin-top: 45px
+				li
+					list-style: none
+					padding: 3px 0 3px 0
+					a
+						font-family: 'Raleway Medium'
+						font-size: 14px
+						color: $title
+						text-decoration: none
+						&:hover
+							color: $subtitle
+	.footer-bottom
+		padding-top: 20px
+		padding-bottom: 20px
+		ul
+			list-style: none
+			display: flex
+			li
+				font-family: 'Raleway Medium'
+				font-size: 14px
+				color: $title 
+				border-right: 1px solid $title
+				padding-right: 15px
+				padding-left: 15px
+				&:last-child
+					border-right: none
+				span
+					font-weight: bold
+					color: $subtitle
+
+
+/*******   Responsive   *******/
+@media screen and (min-width: 992px) 
+	.m-menu
+		display: none
+	.navbar
+		.mmenu
+			display: none
+		&-top-menu
+			display: block
+	
+	.container
+		&-title
+			font-size: 30px
+			padding-left: 15px
+		&-subtitlee
+			font-size: 20px
+			padding-left: 15px
+
+
+@media screen and (max-width: 991px) 
+	.container
+		max-width: 90%
+		
+	.header
+		background: #42A8F6
+		
+	.m-menu
+		position: fixed
+		right: 0
+		top: 0
+		height: 100vh
+		width: 100%
+		list-style: none
+		line-height: 3
+		margin: 0
+		background: #42A8F6
+		display: flex
+		z-index: 99
+		flex-direction: column
+		align-items: center
+		justify-content: center
+		transition: 0.2s
+		transform: translateX(100%)
+	.m-menu__active
+		transform: translateX(0%)
+		.close-menu
+			position: fixed
+			top: 0
+			right: 5rem
+			font-size: 3rem
+			color: #fff
+			&:hover
+				cursor: pointer
+	.navbar
+		.mmenu
+			display: block
+			color: #ffffff	
+			position: absolute
+			top: 0
+			right: 5rem
+			font-size: 2rem
+		&-logo
+			margin-left: 20px
+		&-top-menu
+			display: none
+	
+	.container
+		&-title
+			font-size: 25px
+			text-align: center
+		&-subtitlee
+			font-size: 18px
+			text-align: center
+		&-btn
+			margin: 0 auto
+	.image-bg
+		display: none
+	.costomization-features
+		width: 90%
+		text-align: center
+		display: flex
+		flex-direction: column
+		align-items: center
+		justify-content: center
+	.other-services-block
+		width: 50%
+			
+	.resourse-img	
+		display: none
+			
+@media screen and (max-width: 767px) 
+	.container
+		&-title
+			font-size: 25px
+			text-align: center
+		&-subtitlee
+			font-size: 18px
+			text-align: center
+		&-btn
+			margin: 0 auto
+		.name, .mail
+			width: 80%
+		.subscribe-btn
+			width: 80%
+	.price-block
+		display: flex
+		flex-direction: column
+		align-items: center
+		justify-content: center
+	.price-package
+		width: 80%
+		margin-top: 10px
+		margin-bottom: 10px
+	.ourservices
+		display: flex
+		flex-direction: column
+		align-items: center
+		justify-content: center
+	.our-block
+		border-bottom: 1px solid #f7f7f7
+	.other-services-block
+		width: 90%
+		display: flex
+		flex-direction: column
+		align-items: center
+		justify-content: center
+		border-bottom: 1px solid #f7f7f7
+		img
+			position: static
+		span
+			padding-left: 0 
+	.costomization-features
+		li
+			a
+				margin: 0
+				padding: 0
+@media screen and (max-width: 600px) 
+	.footer-block
+		display: flex
+		flex-wrap: wrap
